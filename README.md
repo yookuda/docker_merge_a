@@ -20,6 +20,11 @@ docker run \
             --prefix /data/<output file prefix>
 ```
 - BLAST検索結果ファイルは-outfmt "0" オプションで出力したものを使用する。
+- merge.plが出力した中間結果ファイルは以下のようにリネームしてdata_dir_pathに置く。
+    - gbkファイル: &lt;output file prefix&gt;.gbk
+    - emblファイル: &lt;output file prefix&gt;.embl
+    - anntファイル: &lt;output file prefix&gt;.annt
+    - csvファイル: &lt;output file prefix&gt;.csv
 - 出力されるファイルは以下の通り。
     - &lt;output file prefix&gt;-a.gbk: GenBank flat file
     - &lt;output file prefix&gt;-a.embl: Embl flat file
